@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "regions": ["cdg1"],
+  "env": {
+    "NEXTAUTH_URL": "https://${VERCEL_URL}",
+    "VERCEL_POSTGRES_PRISMA_URL": "@postgres-prisma-url",
+    "VERCEL_POSTGRES_URL_NON_POOLING": "@postgres-url-non-pooling",
+    "VERCEL_POSTGRES_URL": "@postgres-url"
+  }
+} 
